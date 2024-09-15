@@ -13,6 +13,8 @@ header {
   background-color: #71634b;
   text-align: center;
   padding: 1.4rem;
+  position: sticky;
+  top: 0;
 
   nav {
     display: flex;
@@ -136,5 +138,53 @@ header {
     padding: 1rem;
     -webkit-text-stroke: 1px #ffa7a7;
     font-size: 2.5rem;
+  }
+
+  .list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      text-align: center;
+      width: 300px;
+      border-radius: 10px;
+      margin: 10px;
+      background: #ffc800;
+      padding: 10px;
+      height: 24.5rem;
+
+      img {
+        height: 250px;
+        width: 300px;
+        border-radius: 5px;
+      }
+
+      p {
+        margin-top: 0.2rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-left: 1.2rem;
+    }
+  }
+
+  .more {
+    margin-top: 0.35rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.8rem;
+    font-weight: 500;
+    font-style: italic;
+    background-color: #8da7c3;
+    &:hover {
+      background-color: #5a6b7d;
+    }
   }
 }

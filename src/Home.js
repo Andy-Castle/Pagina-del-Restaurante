@@ -1,4 +1,5 @@
-const home = `<div class="home">
+export default function home() {
+  return `<div class="home">
 <div class="hero">
         <h1>Welcome to odin Restaurant</h1>
         <img
@@ -38,5 +39,6 @@ const home = `<div class="home">
         </div>
       </div>
       </div>`;
+}
 
-export { home };
+// export { home };

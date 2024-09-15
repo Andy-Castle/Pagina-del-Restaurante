@@ -1,4 +1,5 @@
-const menu = `      <div class="menu">
+export default function menu() {
+  return `<div class="menu">
         <h1>Our Meals</h1>
         <ul class="list">
           <li>
@@ -108,5 +109,4 @@ const menu = `      <div class="menu">
           </li>
         </ul>
       </div>`;
-
-export { menu };
+}
